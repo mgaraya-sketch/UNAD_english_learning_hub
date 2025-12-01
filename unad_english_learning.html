@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNAD English Learning Hub</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        header p {
+            font-size: 1.2em;
+            opacity: 0.95;
+        }
+
+        .intro-section {
+            padding: 40px;
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+            border-bottom: 4px solid #f5576c;
+        }
+
+        .intro-section h2 {
+            color: #764ba2;
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+
+        .intro-section p {
+            color: #333;
+            line-height: 1.8;
+            font-size: 1.1em;
+            margin-bottom: 15px;
+        }
+
+        .gem-section {
+            padding: 40px;
+            background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+            text-align: center;
+        }
+
+        .gem-section h2 {
+            color: #d63031;
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+
+        .gem-card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            margin: 20px auto;
+            max-width: 800px;
+        }
+
+        .gem-description {
+            color: #555;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            text-align: left;
+            font-size: 1.05em;
+        }
+
+        .gem-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 1.2em;
+            font-weight: bold;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        .gem-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.6);
+        }
+
+        .topics-section {
+            padding: 40px;
+        }
+
+        .topics-section h2 {
+            color: #764ba2;
+            margin-bottom: 30px;
+            font-size: 2em;
+            text-align: center;
+        }
+
+        .topics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .topic-card {
+            background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+        }
+
+        .topic-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+        }
+
+        .topic-card h3 {
+            color: #2d3436;
+            margin-bottom: 15px;
+            font-size: 1.4em;
+        }
+
+        .topic-card p {
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .pdf-link {
+            display: inline-block;
+            background: #764ba2;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .pdf-link:hover {
+            background: #667eea;
+        }
+
+        footer {
+            background: #2d3436;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+        footer p {
+            margin-bottom: 10px;
+        }
+
+        .emoji {
+            font-size: 1.5em;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8em;
+            }
+
+            .topics-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌟 UNAD English Learning Hub 🌟</h1>
+            <p>Tu complemento perfecto para dominar el inglés</p>
+        </header>
+
+        <div class="intro-section">
+            <h2>📚 Bienvenido a tu Centro de Aprendizaje</h2>
+            <p>
+                Este sitio web ha sido diseñado especialmente para <strong>complementar tu experiencia en la plataforma INVIL de la UNAD</strong>. Aquí encontrarás recursos adicionales, explicaciones detalladas y un tutor virtual disponible 24/7 para apoyarte en tu proceso de aprendizaje del inglés.
+            </p>
+            <p>
+                Nuestra misión es simple: <strong>hacer que aprender inglés sea más fácil, accesible y agradable</strong>. Cada tema cuenta con presentaciones explicativas en PDF que te ayudarán a comprender mejor los conceptos, junto con la posibilidad de consultar con nuestro tutor virtual personalizado cuando lo necesites.
+            </p>
+            <p>
+                <strong>¿Cómo usar este sitio?</strong> Explora los temas organizados por categorías, descarga o consulta las presentaciones en PDF, y no dudes en chatear con tu tutor virtual cuando tengas dudas. ¡Estamos aquí para que tengas éxito!
+            </p>
+        </div>
+
+        <div class="gem-section">
+            <h2>🤖 Conoce a tu Tutor Virtual</h2>
+            <div class="gem-card">
+                <div class="emoji">👋</div>
+                <h3 style="color: #d63031; margin: 15px 0;">Tu Tutor Personal de Inglés</h3>
+                <div class="gem-description">
+                    <p><strong>¡Hola! Soy tu Tutor Personal de Inglés</strong>, diseñado especialmente para ti, estudiante de la UNAD. Mi misión es simple: asegurarme de que <strong>cometer errores es parte del proceso</strong> y que cada avance, por pequeño que sea, es un gran éxito.</p>
+                    
+                    <p>Soy <strong>paciente, amigable y muy alentador</strong>. Explico cualquier concepto de inglés (¡desde lo más básico!) de forma clara y con ejemplos relevantes para tu vida. Además, te sugeriré recursos complementarios para que domines cada tema.</p>
+                    
+                    <p><strong>¡Dile adiós a la frustración y hola a la confianza en el inglés!</strong></p>
+                    
+                    <p style="margin-top: 20px;">¿Cuál es el tema, regla o palabra que te gustaría que revisáramos hoy?</p>
+                </div>
+                <a href="https://gemini.google.com/gem/1GZbhq5rIvTz_2e7odA3cW48U8PR4sRC4?usp=sharing" target="_blank" class="gem-button">
+                    💬 Chatear con mi Tutor Ahora
+                </a>
+            </div>
+        </div>
+
+        <div class="topics-section">
+            <h2>📖 Temas de Inglés</h2>
+            <p style="text-align: center; color: #666; margin-bottom: 30px;">
+                Explora cada tema y descarga las presentaciones en PDF para estudiar a tu propio ritmo
+            </p>
+
+            <div class="topics-grid">
+                <div class="topic-card">
+                    <h3>🏠 There is / There are</h3>
+                    <p>Aprende a expresar la existencia de personas, lugares y cosas en inglés con claridad y precisión.</p>
+                    <a href="https://drive.google.com/open?id=1OobJ8g1uNbYLtlPBoVkk-IGLwnjYiYin&usp=drive_copy" target="_blank" class="pdf-link">📄 Ver Presentación</a>
+                </div>
+
+                <div class="topic-card">
+                    <h3>⏰ Simple Present</h3>
+                    <p>Domina el tiempo verbal más usado en inglés para hablar de rutinas, hábitos y verdades universales.</p>
+                    <a href="https://drive.google.com/open?id=1C86dChSFFmj8D09pLuqC19_kJo-e2Msb&usp=drive_copy" target="_blank" class="pdf-link">📄 Ver Presentación</a>
+                </div>
+
+                <div class="topic-card">
+                    <h3>👥 Pronombres Indefinidos</h3>
+                    <p>Descubre cómo usar someone, anyone, everybody y nobody en tus conversaciones diarias.</p>
+                    <a href="https://drive.google.com/open?id=13PA4cvOtX6Y0BrAqFIjjPe4c_tN3zoX0&usp=drive_copy" target="_blank" class="pdf-link">📄 Ver Presentación</a>
+                </div>
+
+                <div class="topic-card">
+                    <h3>👉 Pronombres Demostrativos</h3>
+                    <p>Aprende a usar this, that, these y those con el verbo TO BE para señalar y describir.</p>
+                    <a href="https://drive.google.com/open?id=1mRo9Zf6KEvMDdMH5iHpYtrMdFE0xPJfK&usp=drive_copy" target="_blank" class="pdf-link">📄 Ver Presentación</a>
+                </div>
+
+                <div class="topic-card">
+                    <h3>📢 Los Imperativos</h3>
+                    <p>Dale órdenes, haz peticiones y ofrece consejos en inglés de manera clara y directa.</p>
+                    <a href="https://drive.google.com/open?id=1-V4NGxfFIajZuskEXrNOzB8ALi8Sspxl&usp=drive_copy" target="_blank" class="pdf-link">📄 Ver Presentación</a>
+                </div>
+
+                <div class="topic-card">
+                    <h3>❤️ Expresar Gustos y Verbos Modales</h3>
+                    <p>Comunica tus preferencias y aprende a usar can, should y must en contexto.</p>
+                    <a href="https://drive.google.com/open?id=1iaFIKVjqy-fm4GXUOLgaYG8nkA6c8z8M&usp=drive_copy" target="_blank" class="pdf-link">📄 Ver Presentación</a>
+                </div>
+
+                <div class="topic-card">
+                    <h3>✨ El Verbo TO BE</h3>
+                    <p>La base fundamental del inglés: aprende a usar am, is y are en todas sus formas.</p>
+                    <a href="https://drive.google.com/open?id=1Vy36wy8YhT0Nq8BQ3WHQl3K-r6bFMRNf&usp=drive_copy" target="_blank" class="pdf-link">📄 Ver Presentación</a>
+                </div>
+
+                <div class="topic-card">
+                    <h3>❓ Preguntas Wh-</h3>
+                    <p>Domina las preguntas con what, where, when, who, why y how para obtener información.</p>
+                    <a href="https://drive.google.com/open?id=12dIr87u4Xg3NQO8eUdZ1nWG12e3rfULr&usp=drive_copy" target="_blank" class="pdf-link">📄 Ver Presentación</a>
+                </div>
+
+                <div class="topic-card">
+                    <h3>🔄 Do, Does, Don't, Doesn't</h3>
+                    <p>Aprende a formar preguntas y negaciones en presente simple con confianza.</p>
+                    <a href="https://drive.google.com/open?id=19R7mpsRRZ1uXcRcT4yjF2FmJHRa6qEgY&usp=drive_copy" target="_blank" class="pdf-link">📄 Ver Presentación</a>
+                </div>
+
+                <div class="topic-card">
+                    <h3>🏃 Presente Progresivo</h3>
+                    <p>Habla sobre acciones que ocurren en este momento con el presente continuo.</p>
+                    <a href="https://drive.google.com/open?id=1g_lQdpmdDxRjkwT8JJwwY7SFlHKtIKtj&usp=drive_copy" target="_blank" class="pdf-link">📄 Ver Presentación</a>
+                </div>
+
+                <div class="topic-card">
+                    <h3>📊 Comparativos y Superlativos</h3>
+                    <p>Compara personas, lugares y cosas usando formas comparativas y superlativas.</p>
+                    <a href="https://drive.google.com/open?id=1q_XXMcZPQXxhsjWJE_1WR5zBfhhm65jo&usp=drive_copy" target="_blank" class="pdf-link">📄 Ver Presentación</a>
+                </div>
+
+                <div class="topic-card">
+                    <h3>🕐 Decir la Hora</h3>
+                    <p>Aprende a preguntar y responder sobre la hora en inglés con confianza.</p>
+                    <a href="https://drive.google.com/open?id=1rD8xYvbRAv8fUfmA3S4Y2MMCwGfStb8u&usp=drive_copy" target="_blank" class="pdf-link">📄 Ver Presentación</a>
+                </div>
+
+                <div class="topic-card">
+                    <h3>🔁 Adverbios de Frecuencia</h3>
+                    <p>Expresa con qué frecuencia haces las cosas usando always, usually, sometimes, never y más.</p>
+                    <a href="https://drive.google.com/open?id=1XOFXCUdFEjVZxJ2mN_NIISSj6rsm1kRm&usp=drive_copy" target="_blank" class="pdf-link">📄 Ver Presentación</a>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p><strong>🎓 UNAD English Learning Hub</strong></p>
+            <p>Complemento educativo para la plataforma INVIL</p>
+            <p style="margin-top: 15px; font-size: 0.9em; opacity: 0.8;">
+                ✨ Recuerda: cada paso cuenta, cada error es aprendizaje, y tu éxito está más cerca de lo que crees ✨
+            </p>
+            <div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.3);">
+                <p style="font-size: 0.95em; margin-bottom: 10px;">
+                    <strong>Este recurso pedagógico ha sido creado por María Luisa Garay Angarita</strong>
+                </p>
+                <p style="font-size: 0.9em; line-height: 1.8;">
+                    <a href="https://orcid.org/0009-0000-4036-6638" target="_blank" style="color: #a8edea; text-decoration: none; margin: 0 10px;">🔗 ORCID</a>
+                    <a href="https://scholar.google.com/citations?user=yHUojkIAAAAJ&hl=en" target="_blank" style="color: #a8edea; text-decoration: none; margin: 0 10px;">📚 Google Scholar</a>
+                    <a href="https://www.linkedin.com/in/maria-luisa-garay-an" target="_blank" style="color: #a8edea; text-decoration: none; margin: 0 10px;">💼 LinkedIn</a>
+                </p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
